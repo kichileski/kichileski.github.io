@@ -24,21 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="1">
@@ -46,7 +32,9 @@
         <!--cabeçalho-->
 
         <nav>
-            <!--Navegação cabeçalho-->
+     
+            <div>
+       <!--Navegação cabeçalho-->
             <!--(a) href link ancora-->
             <a href="index.html">Home</a>
             <a href="pglinux.html">Distribuições Linux</a>
@@ -56,29 +44,31 @@
             <a href="pgtexto.html">Editores de texto</a>
             <a href="pgnavegadores.html">Navegadores</a>
             <a href="pgdiversos.html">Diversos</a>
+
+            </div>
         </nav>
 
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
-        <h1>Editores de foto</h1>
+        <h2>Editores de foto</h2>
 
         <p>O <strong>GIMP</strong> já é bastante conhecido pelos usuários de Linux. O programa conta com as mais variadas funções, sendo
             uma das principais alternativas ao famoso Photoshop. Por contar com extensão para o Python, usuários podem
             encontrar scripts online ou, ainda, escrever o seu próprio.</p>
-        <img src="img/gimp.jpg" alt="gimp, editor de fotos" title="gimp">
+        <img src="img/gimp.jpg" alt="gimp, editor de fotos" title="gimp" >
         <p>O <strong>Inkscape</strong> é ideal para quem trabalha com a criação de gráficos digitais e logomarcas. A ferramenta oferece
             uma variedade de opções para a personalização de imagens e é compatível com as extensões PDF, PNG,
             PostScript e muito mais.</p>
         <img src="img/inkscape.jpg" alt="inkscape, editor de fotos" title="inkscape">
         <p><strong>LightZone</strong> é um programa indicado para fotógrafos. A ferramenta permite a edição de fotos com possibilidades
             poderosas, deixando o trabalho bastante profissional.</p>
-        <img src="img/lightzone.png" alt="lightzone, editor de fotos" title="ligtzone">
+        <img src="img/lightzone.png" alt="lightzone, editor de fotos" title="ligtzone" >
         <p><strong>Krita</strong>, criado para a pintura digital, o Krita é ideal para artistas e ilustradores. No programa, o usuário
             pode criar as suas artes usando o mouse e o teclado ou, ainda, um tablet. O Krita suporta arquivos em PSD e
             exporta para os mais variados formatos.</p>
-        <img src="img/krita.jpg" alt="krita, editor de fotos" title="krita">
+        <img src="img/krita.jpg" alt="krita, editor de fotos" title="krita" >
         <p><strong>Darktable</strong> também é um programa indicado para fotógrafos. Com ele, o usuário pode editar as suas fotos com
             poderosas ferramentas de manipulação de imagens.
             Entre os melhores recursos do Darktable estão a correção de imperfeições e anormalidades comuns encontradas
@@ -87,11 +77,11 @@
     </main>
 
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -105,7 +95,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#1">Voltar ao inicio</a>
+       
         <p id="2">Todos os direitos reservados</p>
     </footer>
 

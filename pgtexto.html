@@ -24,21 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="1">
@@ -60,7 +46,7 @@
 
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
         <h2>Editores de texto para linux</h2>
 
@@ -71,18 +57,18 @@
             O LibreOffice incorpora várias aplicações que as torna a mais poderosa suíte de produtividade de escritório
             livre e
             aberta do mercado. </p>
-        <img src="img/libreoffice.png" alt="Libre office, editor de texto, planilhas e apresentação" />
+        <img src="img/libreoffice.png" alt="Libre office, editor de texto, planilhas e apresentação"/>
 
         <p>O <strong> VSCode</strong>  é um editor de texto moderno robusto, gratuito e de código aberto desenvolvido pela Microsoft para
             computadores Linux, Mac e Windows.</p>
-        <img src="img/vscode.png" alt="vscode, ditor de texto" />
+        <img src="img/vscode.png" alt="vscode, ditor de texto"/>
 
         <p><strong> Notepad ++</strong>  é um editor de texto personalizável desenvolvido com foco na velocidade e no tamanho mínimo do
             programa
             para plataformas Windows. Ele é desenvolvido com base no editor de texto Scintilla e pode ter sua
             funcionalidade
             ampliada com toneladas de plugins.</p>
-        <img src="img/notepad.png" alt="notepad mais mais, é um editor de texto" />
+        <img src="img/notepad.png" alt="notepad mais mais, é um editor de texto"/>
 
         <p>O <strong> Vim</strong>  é um poderoso editor de texto baseado em linha de comando que aprimorou as funcionalidades do antigo
             editor de
@@ -91,22 +77,22 @@
             referir a ele como um editor de programador. Ele ativa o destaque de sintaxe ao escrever código ou editar
             arquivos
             de configuração</p>
-        <img src="img/vim.png" alt="vim, é um editor de texto baseado em linha de comandos" />
+        <img src="img/vim.png" alt="vim, é um editor de texto baseado em linha de comandos"/>
 
         <p><strong> Gedit</strong>  é um editor de texto baseado em GUI de uso geral e é instalado como editor de texto padrão no ambiente
             de área
             de trabalho Gnome. É simples de usar, altamente plugável e um editor poderoso com os seguintes recursos</p>
-        <img src="img/gedit.png" alt="gedit, é um editor de texto" />
+        <img src="img/gedit.png" alt="gedit, é um editor de texto"/>
 
         <p><strong> Nano</strong>  é um editor de texto fácil de usar, especialmente para usuários Linux novos e avançados. Ele melhora a
             usabilidade, fornecendo ligação de teclas personalizável.</p>
-        <img src="img/nano.png" alt="nano, é um editor de texto" />
+        <img src="img/nano.png" alt="nano, é um editor de texto"/>
         <p><strong> Emacs</strong> é um editor de texto altamente extensível e personalizável que também oferece uma interpretação da
             linguagem de
             programação Lisp em seu núcleo. Extensões diferentes podem ser adicionadas para oferecer suporte a
             funcionalidades
             de edição de texto.</p>
-        <img src="img/emacs.png" alt="emacs, é um editor de texto" />
+        <img src="img/emacs.png" alt="emacs, é um editor de texto"/>
         <p><strong> Kate</strong>  é um editor de texto rico em recursos e altamente plugável que vem com o KDesktop Environment (KDE). O
             projeto
             Kate visa o desenvolvimento de dois produtos principais que são: KatePart e Kate.
@@ -114,14 +100,14 @@
             que os
             usuários editem o texto, enquanto o Kate é um editor de texto com interface de documentos múltiplos (MDI).
         </p>
-        <img src="img/kate.png" alt="kate, é um editor de texto" />
+        <img src="img/kate.png" alt="kate, é um editor de texto"/>
     </main>
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -135,7 +121,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#1">Voltar ao inicio</a>
+       
         <p id="2">Todos os direitos reservados</p>
     </footer>
 

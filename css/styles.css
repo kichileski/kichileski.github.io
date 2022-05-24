@@ -1,0 +1,216 @@
+img {
+ max-width: 500px;
+ max-height: 450px;
+ width: auto;
+ height: auto;
+
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 20px;
+ margin: auto;
+
+}
+
+#im { margin-left: 25%;
+  margin-right: auto;
+}
+
+h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+table {
+  margin-left: 25%;
+  margin-right: auto;
+
+}
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: auto;
+  text-align: left;
+}
+
+img {
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+strong {
+  color: black;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background-color: goldenrod;
+  padding: 30px;
+  border-radius: 10px;
+ 
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+ background-color:gold;;
+
+}
+
+nav div {
+
+}
+
+footer {
+  background-color: goldenrod;
+  padding: 0.1px;
+  border-radius: 10px;
+
+  
+  
+}
+ footer a{
+  text-decoration: none;
+  color: black;
+ }
+footer div ul {
+  list-style: none;
+}
+
+footer div li {
+  display: inline-block;
+  background-color: white;
+  
+  padding: 5px;
+  border-radius: 10px;
+  
+}
+footer a:visited {
+  color:black;
+}
+
+footer li:hover {
+  
+  background-color: gold;;
+ 
+ }
+
+table a{
+  color: black;
+}
+ table a:visited {
+  color:black;
+}
+td {
+  padding: 20px;
+}
+tr:nth-child(odd){background-color: goldenrod;}
+
+/* BotÃ£o PrÃ³ximo */
+.button_prox {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: gold;
+  border: 1px solid #d8dee9;
+  color: #D8DEE9;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 5px 5px 5px #2E3440,
+              5px 5px 5px #3B4252;
+}
+.button_prox span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: black;
+}
+.button_prox span:after {
+  content: '➜';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.button_prox:hover span {
+  padding-right: 20px;
+  background-image: linear-gradient(to right, #D8DEE9, #ECEFF4);
+  color: #2E3440;
+}
+.button_prox:hover {
+  background-image: linear-gradient(to right, #D8DEE9, #ECEFF4);
+  color: #2E3440;
+}
+.button_prox:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* BotÃ£o Anterior */
+.button_ant {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: gold;
+  border: 1px solid #d8dee9;
+  color: #D8DEE9;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 5px 5px 5px #2E3440,
+              5px 5px 5px #3B4252;
+}
+.button_ant span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  color: black;
+}
+.button_ant span:after {
+  content: '➜';
+  transform: translateX(-50%) rotate(180deg);
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+.button_ant:hover span {
+  padding-left: 10px;
+  background-image: linear-gradient(to left, #D8DEE9, #ECEFF4);
+  color: #2E3440;
+}
+.button_ant:hover {
+  background-image: linear-gradient(to left, #D8DEE9, #ECEFF4);
+  color: #2E3440;
+}
+.button_ant:hover span:after {
+  opacity: 1;
+  left: 0;
+}
+ 

@@ -24,21 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="1">
@@ -60,7 +46,7 @@
 
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
         <h2>Conhecendo o Sistema Operacional Linux</h2>
 
@@ -94,7 +80,7 @@
 
             </dt>
 
-            <dd><img style="width: 500px;" src="img/firefox.png" alt="Foto do navegador firefox no linux"></dd>
+            <dd><img src="img/firefox.png" alt="Foto do navegador firefox no linux"></dd>
             <dt>
                 <a href="https://www.google.com/chrome/" target="_blank"><strong>Chrome</strong></a> Seu web browser
                 oficial, chegou ao
@@ -103,7 +89,7 @@
                 Um dos fatores que contribuem para isso é que trata-se de um navegador multiplataforma e funciona em
                 praticamente qualquer sistema operacional (inclusive o Linux).
             </dt>
-            <dd><img style="width: 500px;" src="img/chrome.png" alt="Foto do navegador chrome no linux"></dd>
+            <dd><img src="img/chrome.png" alt="Foto do navegador chrome no linux"></dd>
             <dt>
                 <a href="https://www.opera.com/" target="_blank"><strong>Opera</strong></a>
                 O navegador Opera, desenvolvido pela empresa de mesmo nome, é um dos browsers mais antigos ainda
@@ -117,16 +103,16 @@
                 pode ser considerado uma das melhores alternativas.
             </dt>
 
-            <dd><img style="width: 500px;" src="img/opera.png" alt="Foto do navegador opera no linux"> </dd>
+            <dd><img src="img/opera.png" alt="Foto do navegador opera no linux"> </dd>
 
         </dl>
     </main>
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -140,7 +126,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#1">Voltar ao inicio</a>
+       
         <p id="2">Todos os direitos reservados</p>
     </footer>
 

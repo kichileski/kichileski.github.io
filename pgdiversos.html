@@ -24,21 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="1">
@@ -59,9 +45,9 @@
         </nav>
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
-        <h1>Diversos programas para linux</h1>
+        <h2>Diversos programas para linux</h2>
 
         <p><strong>Wine</strong> é uma camada de compatibilidade para sistemas operativos UNIX que tem como objetivo a implementação da
             API da Microsoft Windows, sendo liderada por Alexandre Julliard. Desta forma, em teoria, o Wine permite a
@@ -70,14 +56,14 @@
         <p><strong>Virtualbox</strong> é um software de virtualização (que executa programas como um computador real) que desde 2009 teve
             sua licença adquirida pela Oracle. Atualmente é mantida sobre a licença GPL (Licença Pública Geral) e é
             compatível com os sistemas operacionais: Linux , macOS, Windows e Solaris.</p>
-        <img src="img/virtualbox.jpg" alt="virtualbox, virtualizador" />
+        <img src="img/virtualbox.jpg" alt="virtualbox, virtualizador"/>
         <p><strong>GParted</strong> é o aplicativo GNOME para edição de partições. Suas funções são as de detectar, ler, criar, destruir,
             redimensionar, verificar, mover e copiar partições e seus sistemas de arquivos</p>
         <img src="img/gparted.png" alt="gparted, editor de partições hd, ssd, pendraive etc.." />
         <p><strong>FileZilla</strong> é um cliente FTP, SFTP e FTPS de código livre para Microsoft Windows e GNU/Linux. É distribuído em
             licença GNU General Public License. Desde 1 de março de 2007 ocupa a 9ª posição na lista dos mais baixados
             do SourceForge, desbancando nomes como phpBB, Pidgin e MinGW </p>
-        <img src="img/filezilla.jpg" alt="filezilla, cliete ftp, sftp, ftps" />
+        <img src="img/filezilla.jpg" alt="filezilla, cliete ftp, sftp, ftps"/>
         <p><strong>LibreCAD</strong> é uma aplicação de desenho assistido por computador, ou Computer Aided Design, livre para o projetos
             em 2D. Ele funciona em GNU/Linux, Mac OS X, Unix e sistemas operacionais Microsoft Windows. LibreCAD foi
             desenvolvido como uma bifurcação do <i>QCad Community Edition.</i> </p>
@@ -87,11 +73,11 @@
 
     </main>
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -105,7 +91,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#1">Voltar ao inicio</a>
+        
         <p id="2">Todos os direitos reservados</p>
     </footer>
 

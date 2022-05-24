@@ -24,21 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body id="1">
 
@@ -57,7 +43,7 @@
         </nav>
 </header>
 <main>
-    <a href="#2">Ir ao final da pagina</a>
+    <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
     <h2>Editores de audio para linux</h2>
 
@@ -91,7 +77,7 @@
         a
         fim de aprimorar a sua edição.</p>
 
-    <img src="img/audacity.png" alt="audacity, editor de audio">
+    <img src="img/audacity.png" alt="audacity, editor de audio" >
 
     <p><strong>Cecilia</strong> é um sofisticado software voltado para o processamento de áudio de modo interativo e em tempo real. É
         possível realizar uma série de composições sonoras a partir das funcionalidades disponíveis. Por isso, é uma
@@ -99,14 +85,14 @@
         Mac
         OS.</p>
 
-    <img src="img/cecilia.png" alt="cecilia, editor de audio">
+    <img src="img/cecilia.png" alt="cecilia, editor de audio" >
 
     <p><strong>Mixxx</strong> o mais atrativo da ferramenta é a possibilidade de mixagem de som de uma forma bastante profissional. Além
         de
         Linux, Funciona em Mac OS e Windows. Conta com quatro decks com controles avançados, um menu de efeitos sonoros,
         permite gravação e transmissão e tem suporte para hardwares utilizados por DJ's. </p>
 
-    <img src="img/mixxx.png" alt="mixxx, editor de audio">
+    <img src="img/mixxx.png" alt="mixxx, editor de audio" >
 
     <p><strong>Jokosher</strong> é uma opção simples para a edição de áudio no Linux, o Jokosher talvez seja um dos programas mais
         indicados
@@ -120,17 +106,18 @@
         diferentes
         instrumentos musicais e muito mais. Filtros e efeitos complementam os recursos deste ótimo programa. </p>
 
-    <img src="img/jokosher.png" alt="jokosher, editor de audio">
+    <img src="img/jokosher.png" alt="jokosher, editor de audio" >
     
 </main>
 <footer>
+    <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
 
     <h3>Confira nossas redes sociais</h3>
 
 
 
     <div>
-        <ul style="list-style-type: circle;">
+        <ul>
             <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                 <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
             </li>
@@ -145,7 +132,7 @@
         </ul>
     </div>
  
-    <a href="#1">Voltar ao inicio</a>
+    
     <p id="2">Todos os direitos reservados</p>
     </footer>
 

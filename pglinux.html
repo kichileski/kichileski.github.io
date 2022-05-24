@@ -24,19 +24,10 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css">
 
     <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
         table, th, td {
             border:solid 2px black;
             text-align: center;
@@ -69,37 +60,40 @@
         </nav>
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
         <h2>Conhecendo o alguns sistemas linux</h2>
 
-        <img src="img/distrolinux.jpg" alt="foto de Distribuições linux" title="distros linux">
+        <img src="img/distrolinux.jpg" alt="foto de Distribuições linux" title="distros linux" id="im">
 
         <table>
 
             <tr>
                 <td><a href="https://linuxmint.com/" target="_blank">Linux Fedora</a></td>
                 <td><a href="https://ubuntu.com/" target="_blank">Linux Ubuntu</a></td>
+                <td><a href="https://archlinux.org/" target="_blank">Linux Arch</a></td>
+                <td><a href="https://www.biglinux.com.br/" target="_blank">Big Linux</a></td>
             </tr>
 
             <tr>
                 <td><a href="https://www.debian.org/" target="_blank">Linux Debian</a></td>
                 <td><a href="https://www.redhat.com/pt-br" target="_blank">Linux RedHat</a></td>
+                <td><a href="https://manjaro.org/" target="_blank">Linux Manjaro</a></td>
+                <td><a href="http://www.slackware.com/" target="_blank">Slackware Linux</a></td>
             </tr>
 
             <tr>
                 <td><a href="https://www.centos.org/" target="_blank">Linux Centos</a></td>
-                <td><a href="https://archlinux.org/" target="_blank">Linux Arch</a></td>
-            </tr>
-
-            <tr>
                 <td> <a href="https://www.suse.com" target="_blank">Linux Suse</a></td>
-                <td><a href="https://www.deepin.org/en/" target="_blank">Linux Deepin</a></td>
+                <td><a href="https://www.kali.org/" target="_blank">Linux Kali</a></td>
+                <td><a href="https://www.mageia.org/pt-br/" target="_blank">Mageia</a></td>
             </tr>
 
             <tr>
-                <td><a href="https://www.kali.org/" target="_blank">Linux Kali</a></td>
-                <td><a href="https://manjaro.org/" target="_blank">Linux Manjaro</a></td>
+                <td><a href="https://www.deepin.org/en/" target="_blank">Linux Deepin</a></td>
+                <td><a href="https://pop.system76.com/" target="_blank">Pop OS</a></td>
+                <td><a href="https://zorin.com/os/" target="_blank">Zorin OS</a></td>
+                <td><a href="https://www.gentoo.org/" target="_blank">Gentoo</a></td>
             </tr>
 
         </table>
@@ -117,11 +111,11 @@
         </ol>
     </main>
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -135,7 +129,7 @@
                 </li>
             </ul>
         </div>
-        <a href="#1">Voltar ao inicio</a>
+        
         <p id="2">Todos os direitos reservados</p>
     </footer>
 

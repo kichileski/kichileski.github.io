@@ -24,23 +24,7 @@
         content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
-
-    <style>
-        img {
-            max-width: 500px;
-            max-height: 450px;
-            width: auto;
-            height: auto;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-        }
-
-   
-    </style>
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body id="1">
@@ -50,6 +34,7 @@
         <nav>
             <!--Navegação cabeçalho-->
             <!--(a) href link ancora-->
+            
             <a href="index.html">Home</a>
             <a href="pglinux.html">Distribuições Linux</a>
             <a href="pgaudio.html">Editores de audio</a>
@@ -59,16 +44,14 @@
             <a href="pgnavegadores.html">Navegadores</a>
             <a href="pgdiversos.html">Diversos</a>
         </nav>
+
     </header>
     <main>
-        <a href="#2">Ir ao final da pagina</a>
-
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
         <h2>Conhecendo o Sistema Operacional Linux</h2>
 
-        <img src="img/linux.png" alt="varias distribuições linux" />
-        <h1>O que é Linux?</h1>
-
-
+        <img src="img/linux.png" alt="varias distribuições linux" id="im"/>
+        <h2>O que é Linux?</h2>
 
         <p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em
             um
@@ -171,11 +154,11 @@
 
     </main>
     <footer>
-
+        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
-            <ul style="list-style-type: circle;">
+            <ul>
                 <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
                     <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
                 </li>
@@ -189,7 +172,6 @@
                 </li>
             </ul>
         </div>
-     <a href="#1">Voltar ao inicio</a>
     <p id="2">Todos os direitos reservados</p>
     </footer>
 
