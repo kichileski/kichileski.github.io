@@ -9,7 +9,7 @@
     <!--Acentuação do texto-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Area em que o conteudo pode ser acessado, importante para dispositivos móveis-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Atualiza a pagina a cada 3 segundos -->
     <meta http-equiv="refresh" content="20">
     <title>Mundo Linux</title>
@@ -25,51 +25,142 @@
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS only (BootsSteep) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper (BootsSteep) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 
     <style>
-
-        table, th, td {
-            border:solid 2px black;
+        table,
+        th,
+        td {
+            border: solid 2px black;
             text-align: center;
             border-collapse: collapse;
         }
-        tbody#destaque:hover, th:hover {
+
+        tbody#destaque:hover,
+        th:hover {
             background-color: #ccc;
         }
-
-
     </style>
 
 </head>
 
-<body id="1">
+<body id="1" style="background: rgba(255, 217, 0, 0.603);">
+    
     <header>
         <!--cabeçalho-->
+        <!--Navegação cabeçalho-->
+        <!--(a) href link ancora-->
 
-        <nav>
-            <!--Navegação cabeçalho-->
-            <!--(a) href link ancora-->
-            <a href="index.html">Home</a>
-            <a href="pglinux.html">Distribuições Linux</a>
-            <a href="pgaudio.html">Editores de audio</a>
-            <a href="pgfoto.html">Editores de foto</a>
-            <a href="pgvideo.html">Editores de video</a>
-            <a href="pgtexto.html">Editores de texto</a>
-            <a href="pgnavegadores.html">Navegadores</a>
-            <a href="pgdiversos.html">Diversos</a>
+        <nav class="navbar navbar-expand-sm">
+
+            <a class="index" href="index.html"><i class="bi bi-house-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li><a class="pglinux" href="pglinux.html">Distribuições Linux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgaudio" href="pgaudio.html">Editores de audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgfoto" href="pgfoto.html">Editores de foto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgvideo" href="pgvideo.html">Editores de video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgtexto" href="pgtexto.html">Editores de texto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgnavegadores" href="pgnavegadores.html">Editores de navegadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgdiversos" href="pgdiversos.html">Diversos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
+
     </header>
     <main>
-        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
-
+        
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da
+                    página</b></span></button>
+         <div class="container">
         <h2>Conhecendo o alguns sistemas linux</h2>
 
-        <img src="img/distrolinux.jpg" alt="foto de Distribuições linux" title="distros linux" id="im">
+        <img src="img/distrolinux.jpg" alt="foto de Distribuições linux" title="distros linux"
+            class="img-thumbnail imgnew">
 
-        <table>
+            <!-- Button trigger modal -->
+        <div class="container text-center mt-3 mb-3">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+               <strong> Distribuições </strong>
+              </button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Sobre as distribuições</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p> Linux Mint: É uma distribuição Linux irlandesa. Possui duas versões: uma baseada em Ubuntu e outra versão baseada em Debian. Suporta muitos idiomas, incluindo a língua portuguesa, e utiliza o Cinnamon como seu principal ambiente de desktop.</p>
+
+                        <p> Ubuntu: É um sistema operacional ou sistema operativo de código aberto, construído a partir do núcleo Linux, baseado no Debian e utiliza GNOME como ambiente de desktop de sua mais recente versão com suporte de longo prazo. Esta distribuição Linux é desenvolvida pela Canonical Ltd.</p>
+                        
+                        <p> Arch Linux: É uma distribuição Linux para computadores com arquitetura x86-64. Desenvolvido inicialmente pelo canadense Judd Vinet, esse sistema operacional se apresenta de maneira diferente de outros, como Windows e MacOS.</p>
+                        
+                        <p> BigLinux: Tem como objetivo trazer desenvolvimento tecnológico, inclusão digital, divulgação do Software Livre, incentivo ao uso de padrões livres e compartilhamento do conhecimento.</p>
+                        
+                        <p> Debian: Anteriormente chamado Debian GNU/Linux e hoje apenas Debian, é um sistema operacional composto inteiramente de software livre e mantido oficialmente pelo Projeto Debian. O projeto recebe, ainda, apoio de outros indivíduos e organizações de todo o mundo.</p>
+                        
+                        <p> Red Hat: É um sistema operacional ou sistema operativo GNU/Linux com foco para o mercado corporativo. É desenvolvido pela empresa Red Hat.</p>
+                        
+                        <p> Manjaro: É uma distribuição Linux livre e de código aberto baseada no sistema operacional Arch Linux. O Manjaro se concentra na facilidade de uso e acessibilidade, e o próprio sistema foi projetado para funcionar totalmente "direto da caixa" com sua variedade de softwares pré instalados.</p>
+                        
+                        <p> Slackware: É a mais antiga e conhecida distribuição GNU/Linux mantida ainda em evidência. Seu criador e responsável pela manutenção, Patrick Volkerding, estabelece uma meta de produção da distribuição baseada em simplicidade e estabilidade, alcançando o padrão de distribuição mais Unix-like ao manter seus usuários nas camadas de configuração em console de modo texto para uma total personalização do ambiente. </p>
+                        
+                        <p> CentOS: Abreviação de Community ENTerprise Operating System, é uma distribuição Linux de classe corporativa derivada de códigos fonte gratuitamente distribuídos pela Red Hat Enterprise Linux e mantida pelo CentOS Project. A numeração das versões é baseada na numeração do Red Hat Enterprise Linux.</p>
+                        
+                        <p> SUSE Linux: É um sistema operacional de computador desenvolvido pela SUSE. Ele é construído sobre o kernel do Linux de código aberto e gratuito e é distribuído com software de sistema e aplicativo de outros projetos de código aberto.</p>
+                        
+                        <p> Kali Linux: É uma distribuição GNU/Linux baseada no Debian, considerado o sucessor do Back Track. O projeto apresenta várias melhorias, além de mais aplicativos. É voltado principalmente para auditoria e segurança de computadores em geral. É desenvolvido e mantido pela Offensive Security Ltd.</p>
+                        
+                        <p> Mageia: É um sistema operacional linux, uma distribuição Linux disponibilizada como software livre e código aberto, criada a partir de um fork da distribuição Mandriva Linux.</p>
+                        
+                        <p> Deepin: É uma distribuição Linux baseada no Debian Stable. Apresenta uma interface própria, chamada Deepin Desktop Environment; além de, uma acervo de aplicações próprias. É desenvolvida pela Wuhan Deepin Technology Company Limited, localizada em Wuhan, China.</p>
+                        
+                        <p> Pop OS: É uma distribuição Linux gratuita de código aberto, baseada no Ubuntu, e conta com um desktop GNOME personalizado. A distribuição é desenvolvida pela fabricante estadunidense de computadores Linux, chamada System76. O Pop!</p>
+                        
+                        <p> Zorin OS: É uma distribuição do sistema operacionalLinux baseada no Ubuntu. Está principalmente orientada a usuários novatos em Linux, porém familiarizados com sistemas operacionais Windows.</p>
+                        
+                        <p> Gentoo Linux é uma metadistribuição baseada no sistema gerenciador de pacotes portage. A nomenclatura usada no desenvolvimento do sistema e seus produtos é inspirada na espécie de pinguim Gentoo.</p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <table id="tabelacentro">
 
             <tr>
-                <td><a href="https://linuxmint.com/" target="_blank">Linux Fedora</a></td>
+                <td><a href="https://linuxmint.com/" target="_blank">Linux Mint</a></td>
                 <td><a href="https://ubuntu.com/" target="_blank">Linux Ubuntu</a></td>
                 <td><a href="https://archlinux.org/" target="_blank">Linux Arch</a></td>
                 <td><a href="https://www.biglinux.com.br/" target="_blank">Big Linux</a></td>
@@ -98,20 +189,63 @@
 
         </table>
 
-        <p><mark>O Linux é um sistema operacional open source e gratuito, disponibilizado sob a Licença Pública Geral (GPL) GNU. Qualquer pessoa pode executar, estudar, modificar e redistribuir o código-fonte, ou até mesmo vender cópias do código modificado, desde que façam isso sob a mesma licença.</mark></p>
+        <p><mark>O Linux é um sistema operacional open source e gratuito, disponibilizado sob a Licença Pública Geral
+                (GPL) GNU. Qualquer pessoa pode executar, estudar, modificar e redistribuir o código-fonte, ou até mesmo
+                vender cópias do código modificado, desde que façam isso sob a mesma licença.</mark></p>
+
+        <div class="alert alert-info">
+            <a class="alert-link">Projeto GNU, em computação, é um projeto lançado em 27 de setembro de 1983
+                    pelo ativista, programador e hacker Richard Stallman. Atualmente, a Free Software Foundation (FSF) é
+                    a principal organização que patrocina o projeto. Já na década de 1980, quase todo software era
+                    proprietário, o que significa que ele possuía donos que proibiam e evitavam a cooperação dos
+                    usuários. Isso tornou o Projeto GNU necessário.O objetivo do projeto era criar um sistema
+                    operacional, chamado GNU, baseado em software livre.</a>.
+        </div>
 
         <h4>Onde o linux pode ser usado</h4>
-        
+
         <ol>
-            <li>Computadores Residenciais</li>
-            <li>Servidores</li>
-            <li>Smartphones</li>
-            <li>Tablets</li>
-            <li>Outros..</li>
+            <li><strong>Computadores Residenciais</strong></li>
+            <li><strong>Servidores</strong></li>
+            <li><strong>Smartphones</strong></li>
+            <li><strong>Tablets</strong></li>
+            <li><strong>Outros..</strong></li>
         </ol>
+
+        
+
+
+        <div class="position-fixed end-0 fixed-bottom-meu">
+            <div class="toast show m-2 fade border-0"
+                style="border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 12px; margin: 10px;"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-notificacao-header text-white"
+                    style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <strong class="me-auto">Entre em contato</strong>
+                    <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="toast-body bg-notificacao-body ">
+                    <div class="justify-content-center text-center">
+                        <a class="m-2"
+                            href="https://api.whatsapp.com/send?phone=5547992486264&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!"
+                            target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+
+                        <a class="m-1" href="https://www.instagram.com/" target="_blank"><i
+                                class="bi bi-instagram icone-fb"></i></a>
+
+                        <a class="m-2" href="https://www.facebook.com/" target="_blank"><i
+                                class="bi bi-facebook icone-fb"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
+        <button onclick="window.location.href='#1'" class="button_prox"
+            style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
@@ -129,10 +263,9 @@
                 </li>
             </ul>
         </div>
-        
+
         <p id="2">Todos os direitos reservados</p>
     </footer>
-
 </body>
 
 </html>

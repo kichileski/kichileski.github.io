@@ -9,7 +9,7 @@
     <!--Acentuação do texto-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Area em que o conteudo pode ser acessado, importante para dispositivos móveis-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Atualiza a pagina a cada 3 segundos -->
     <meta http-equiv="refresh" content="20">
     <title>Mundo Linux</title>
@@ -25,85 +25,158 @@
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS only (BootsSteep) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper (BootsSteep) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 
-<body id="1">
+<body id="1" style="background: rgba(255, 217, 0, 0.603);">
+    <div class="conteiner-fluid"></div>
     <header>
         <!--cabeçalho-->
+        <!--Navegação cabeçalho-->
+        <!--(a) href link ancora-->
 
-        <nav>
-            <!--Navegação cabeçalho-->
-            <!--(a) href link ancora-->
-            <a href="index.html">Home</a>
-            <a href="pglinux.html">Distribuições Linux</a>
-            <a href="pgaudio.html">Editores de audio</a>
-            <a href="pgfoto.html">Editores de foto</a>
-            <a href="pgvideo.html">Editores de video</a>
-            <a href="pgtexto.html">Editores de texto</a>
-            <a href="pgnavegadores.html">Navegadores</a>
-            <a href="pgdiversos.html">Diversos</a>
+        <nav class="navbar navbar-expand-sm">
+
+            <a class="index" href="index.html"><i class="bi bi-house-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li><a class="pglinux" href="pglinux.html">Distribuições Linux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgaudio" href="pgaudio.html">Editores de audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgfoto" href="pgfoto.html">Editores de foto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgvideo" href="pgvideo.html">Editores de video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgtexto" href="pgtexto.html">Editores de texto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgnavegadores" href="pgnavegadores.html">Editores de navegadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgdiversos" href="pgdiversos.html">Diversos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
     </header>
     <main>
-        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
-
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da
+                    página</b></span></button>
+         <div class="container"></div>
         <h2>Editores de texto para linux</h2>
 
-        <p>O <strong> LibreOffice</strong>  é uma poderosa suíte de produtividade de escritório com planilha, editor de texto, editor de
+        <p>O <strong> LibreOffice</strong> é uma poderosa suíte de produtividade de escritório com planilha, editor de
+            texto, editor de
             apresentação e muito mais.
             Sua interface limpa e suas ferramentas avançadas o farão soltar sua criatividade e melhorar sua
             produtividade.
             O LibreOffice incorpora várias aplicações que as torna a mais poderosa suíte de produtividade de escritório
             livre e
             aberta do mercado. </p>
-        <img src="img/libreoffice.png" alt="Libre office, editor de texto, planilhas e apresentação"/>
+        <img src="img/libreoffice.png" alt="Libre office, editor de texto, planilhas e apresentação"
+            class="img-thumbnail imgnew" />
 
-        <p>O <strong> VSCode</strong>  é um editor de texto moderno robusto, gratuito e de código aberto desenvolvido pela Microsoft para
+        <p>O <strong> VSCode</strong> é um editor de texto moderno robusto, gratuito e de código aberto desenvolvido
+            pela Microsoft para
             computadores Linux, Mac e Windows.</p>
-        <img src="img/vscode.png" alt="vscode, ditor de texto"/>
+        <img src="img/vscode.png" alt="vscode, ditor de texto" class="img-thumbnail imgnew" />
 
-        <p><strong> Notepad ++</strong>  é um editor de texto personalizável desenvolvido com foco na velocidade e no tamanho mínimo do
+        <p><strong> Notepad ++</strong> é um editor de texto personalizável desenvolvido com foco na velocidade e no
+            tamanho mínimo do
             programa
             para plataformas Windows. Ele é desenvolvido com base no editor de texto Scintilla e pode ter sua
             funcionalidade
             ampliada com toneladas de plugins.</p>
-        <img src="img/notepad.png" alt="notepad mais mais, é um editor de texto"/>
+        <img src="img/notepad.png" alt="notepad mais mais, é um editor de texto" class="img-thumbnail imgnew" />
 
-        <p>O <strong> Vim</strong>  é um poderoso editor de texto baseado em linha de comando que aprimorou as funcionalidades do antigo
+        <p>O <strong> Vim</strong> é um poderoso editor de texto baseado em linha de comando que aprimorou as
+            funcionalidades do antigo
             editor de
             texto Unix Vi. É um dos editores de texto mais populares e amplamente usados, por isso muitos usuários
             costumam se
             referir a ele como um editor de programador. Ele ativa o destaque de sintaxe ao escrever código ou editar
             arquivos
             de configuração</p>
-        <img src="img/vim.png" alt="vim, é um editor de texto baseado em linha de comandos"/>
+        <img src="img/vim.png" alt="vim, é um editor de texto baseado em linha de comandos"
+            class="img-thumbnail imgnew" />
 
-        <p><strong> Gedit</strong>  é um editor de texto baseado em GUI de uso geral e é instalado como editor de texto padrão no ambiente
+        <p><strong> Gedit</strong> é um editor de texto baseado em GUI de uso geral e é instalado como editor de texto
+            padrão no ambiente
             de área
             de trabalho Gnome. É simples de usar, altamente plugável e um editor poderoso com os seguintes recursos</p>
-        <img src="img/gedit.png" alt="gedit, é um editor de texto"/>
+        <img src="img/gedit.png" alt="gedit, é um editor de texto" class="img-thumbnail imgnew" />
 
-        <p><strong> Nano</strong>  é um editor de texto fácil de usar, especialmente para usuários Linux novos e avançados. Ele melhora a
+        <p><strong> Nano</strong> é um editor de texto fácil de usar, especialmente para usuários Linux novos e
+            avançados. Ele melhora a
             usabilidade, fornecendo ligação de teclas personalizável.</p>
-        <img src="img/nano.png" alt="nano, é um editor de texto"/>
-        <p><strong> Emacs</strong> é um editor de texto altamente extensível e personalizável que também oferece uma interpretação da
+        <img src="img/nano.png" alt="nano, é um editor de texto" class="img-thumbnail imgnew" />
+        <p><strong> Emacs</strong> é um editor de texto altamente extensível e personalizável que também oferece uma
+            interpretação da
             linguagem de
             programação Lisp em seu núcleo. Extensões diferentes podem ser adicionadas para oferecer suporte a
             funcionalidades
             de edição de texto.</p>
-        <img src="img/emacs.png" alt="emacs, é um editor de texto"/>
-        <p><strong> Kate</strong>  é um editor de texto rico em recursos e altamente plugável que vem com o KDesktop Environment (KDE). O
+        <img src="img/emacs.png" alt="emacs, é um editor de texto" class="img-thumbnail imgnew" />
+        <p><strong> Kate</strong> é um editor de texto rico em recursos e altamente plugável que vem com o KDesktop
+            Environment (KDE). O
             projeto
             Kate visa o desenvolvimento de dois produtos principais que são: KatePart e Kate.
             O KatePart é um componente de editor de texto avançado incluído em muitos aplicativos KDE que pode exigir
             que os
             usuários editem o texto, enquanto o Kate é um editor de texto com interface de documentos múltiplos (MDI).
         </p>
-        <img src="img/kate.png" alt="kate, é um editor de texto"/>
+        <img src="img/kate.png" alt="kate, é um editor de texto" class="img-thumbnail imgnew" />
+
+        <div class="position-fixed end-0 fixed-bottom-meu">
+            <div class="toast show m-2 fade border-0"
+                style="border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 12px; margin: 10px;"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-notificacao-header text-white"
+                    style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <strong class="me-auto">Entre em contato</strong>
+                    <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="toast-body bg-notificacao-body ">
+                    <div class="justify-content-center text-center">
+                        <a class="m-2"
+                            href="https://api.whatsapp.com/send?phone=5547992486264&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!"
+                            target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+
+                        <a class="m-1" href="https://www.instagram.com/" target="_blank"><i
+                                class="bi bi-instagram icone-fb"></i></a>
+
+                        <a class="m-2" href="https://www.facebook.com/" target="_blank"><i
+                                class="bi bi-facebook icone-fb"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
     <footer>
-        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
+        <button onclick="window.location.href='#1'" class="button_prox"
+            style="vertical-align:middle"><span><b>Início</b></span></button>
         <h3>Confira nossas redes sociais</h3>
 
         <div>
@@ -121,10 +194,9 @@
                 </li>
             </ul>
         </div>
-       
+
         <p id="2">Todos os direitos reservados</p>
     </footer>
-
 </body>
 
 </html>

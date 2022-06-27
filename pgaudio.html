@@ -9,7 +9,7 @@
     <!--Acentuação do texto-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--  Area em que o conteudo pode ser acessado, importante para dispositivos móveis-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Atualiza a pagina a cada 3 segundos -->
     <meta http-equiv="refresh" content="20">
     <title>Mundo Linux</title>
@@ -25,117 +25,198 @@
     <!-- Sempre usar ícones com extensão .ico -->
     <link rel="icon" href="img/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS only (BootsSteep) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper (BootsSteep) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
-<body id="1">
 
-<header>
-        <nav>
-            <!--Navegação cabeçalho-->
-            <!--(a) href link ancora-->
-            <a href="index.html">Home</a>
-            <a href="pglinux.html">Distribuições Linux</a>
-            <a href="pgaudio.html">Editores de audio</a>
-            <a href="pgfoto.html">Editores de foto</a>
-            <a href="pgvideo.html">Editores de video</a>
-            <a href="pgtexto.html">Editores de texto</a>
-            <a href="pgnavegadores.html">Navegadores</a>
-            <a href="pgdiversos.html">Diversos</a>
+<body id="1" style="background: rgba(255, 217, 0, 0.603);">
+
+    <div class="conteiner-fluid"></div>
+
+    <header>
+        <!--cabeçalho-->
+        <!--Navegação cabeçalho-->
+        <!--(a) href link ancora-->
+
+        <nav class="navbar navbar-expand-sm">
+
+            <a class="index" href="index.html"><i class="bi bi-house-fill"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li><a class="pglinux" href="pglinux.html">Distribuições Linux</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgaudio" href="pgaudio.html">Editores de audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgfoto" href="pgfoto.html">Editores de foto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgvideo" href="pgvideo.html">Editores de video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgtexto" href="pgtexto.html">Editores de texto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgnavegadores" href="pgnavegadores.html">Editores de navegadores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pgdiversos" href="pgdiversos.html">Diversos</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-</header>
-<main>
-    <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
 
-    <h2>Editores de audio para linux</h2>
+    </header>
+    <main>
+        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da
+                    página</b></span></button>
+     <div class="container">
+        <h2>Editores de audio para linux</h2>
 
-    <p>O <strong>Ardour</strong> é uma plataforma completa para a manipulação de arquivos de áudio. Ele trabalha com isso em todos os
-        seus
-        estágios, ou seja, captura, edição e mixagem, oferecendo um ambiente amplo e bem organizado, repleto de
-        ferramentas
-        que colocam os detalhes todos em suas mãos. Além disso, você pode importar áudio ou arquivos MIDI ou então
-        plugar um
-        teclado ou mesmo um microfone ao PC para abastecer o Ardour de conteúdo. O programa se autoproclama indicado
-        para
-        músicos, engenheiros de som, editores de trilhas sonoras e compositores. Seu visual multifaixa colabora ainda
-        mais
-        para uma ótima experiência de uso. Além disso, o Ardour tem suporte para plugins e trabalha, inclusive, em
-        conjunto
-        com mesas físicas de controle de som. Ou seja, uma solução completa, gratuita e eficiente.</p>
+        <p>O <strong>Ardour</strong> é uma plataforma completa para a manipulação de arquivos de áudio. Ele trabalha com
+            isso em todos os
+            seus
+            estágios, ou seja, captura, edição e mixagem, oferecendo um ambiente amplo e bem organizado, repleto de
+            ferramentas
+            que colocam os detalhes todos em suas mãos. Além disso, você pode importar áudio ou arquivos MIDI ou então
+            plugar um
+            teclado ou mesmo um microfone ao PC para abastecer o Ardour de conteúdo. O programa se autoproclama indicado
+            para
+            músicos, engenheiros de som, editores de trilhas sonoras e compositores. Seu visual multifaixa colabora
+            ainda
+            mais
+            para uma ótima experiência de uso. Além disso, o Ardour tem suporte para plugins e trabalha, inclusive, em
+            conjunto
+            com mesas físicas de controle de som. Ou seja, uma solução completa, gratuita e eficiente.</p>
 
-    <img src="img/ardour.png" alt="ardour, editor de audio" title="ardour">
+        <img src="img/ardour.png" alt="ardour, editor de audio" title="ardour" class="img-thumbnail imgnew">
 
-    <p>O <strong>Audacity</strong> também conta com versões para o Windows e faz bastante sucesso no sistema operacional da Microsoft. No
-        Linux não seria diferente, pois aqui estão reunidos recursos bem interessantes em um visual limpo e acessível,
-        apesar de não ser tão avançado quanto outros nomes desta lista. Aqui, porém, você encontra ferramentas para
-        capturar
-        áudio, pode importar arquivos de seu computador, manipula tudo em um ambiente multifaixa, determina a qualidade
-        do
-        som, aplica efeitos para redução de ruído e muito mais. Enfim, a fama que precede este aplicativo não é à toa.
-        Quem
-        preferir, pode usar os inúmeros atalhos de teclado oferecidos pelo Audacity. Ele também tem suporte para plugins
-        e
-        para módulos experimentais que incrementam as suas funções. Para completar, há ainda inúmeros perfis de efeitos
-        a
-        fim de aprimorar a sua edição.</p>
+        <p>O <strong>Audacity</strong> também conta com versões para o Windows e faz bastante sucesso no sistema
+            operacional da Microsoft. No
+            Linux não seria diferente, pois aqui estão reunidos recursos bem interessantes em um visual limpo e
+            acessível,
+            apesar de não ser tão avançado quanto outros nomes desta lista. Aqui, porém, você encontra ferramentas para
+            capturar
+            áudio, pode importar arquivos de seu computador, manipula tudo em um ambiente multifaixa, determina a
+            qualidade
+            do
+            som, aplica efeitos para redução de ruído e muito mais. Enfim, a fama que precede este aplicativo não é à
+            toa.
+            Quem
+            preferir, pode usar os inúmeros atalhos de teclado oferecidos pelo Audacity. Ele também tem suporte para
+            plugins
+            e
+            para módulos experimentais que incrementam as suas funções. Para completar, há ainda inúmeros perfis de
+            efeitos
+            a
+            fim de aprimorar a sua edição.</p>
 
-    <img src="img/audacity.png" alt="audacity, editor de audio" >
+        <img src="img/audacity.png" alt="audacity, editor de audio" class="img-thumbnail imgnew">
 
-    <p><strong>Cecilia</strong> é um sofisticado software voltado para o processamento de áudio de modo interativo e em tempo real. É
-        possível realizar uma série de composições sonoras a partir das funcionalidades disponíveis. Por isso, é uma
-        ferramenta pensada para produtores musicais. Além do Linux, há versões que podem ser executadas por Windows e
-        Mac
-        OS.</p>
+        <p><strong>Cecilia</strong> é um sofisticado software voltado para o processamento de áudio de modo interativo e
+            em tempo real. É
+            possível realizar uma série de composições sonoras a partir das funcionalidades disponíveis. Por isso, é uma
+            ferramenta pensada para produtores musicais. Além do Linux, há versões que podem ser executadas por Windows
+            e
+            Mac
+            OS.</p>
 
-    <img src="img/cecilia.png" alt="cecilia, editor de audio" >
+        <img src="img/cecilia.png" alt="cecilia, editor de audio" class="img-thumbnail imgnew">
 
-    <p><strong>Mixxx</strong> o mais atrativo da ferramenta é a possibilidade de mixagem de som de uma forma bastante profissional. Além
-        de
-        Linux, Funciona em Mac OS e Windows. Conta com quatro decks com controles avançados, um menu de efeitos sonoros,
-        permite gravação e transmissão e tem suporte para hardwares utilizados por DJ's. </p>
+        <p><strong>Mixxx</strong> o mais atrativo da ferramenta é a possibilidade de mixagem de som de uma forma
+            bastante profissional. Além
+            de
+            Linux, Funciona em Mac OS e Windows. Conta com quatro decks com controles avançados, um menu de efeitos
+            sonoros,
+            permite gravação e transmissão e tem suporte para hardwares utilizados por DJ's. </p>
 
-    <img src="img/mixxx.png" alt="mixxx, editor de audio" >
+        <img src="img/mixxx.png" alt="mixxx, editor de audio" class="img-thumbnail imgnew">
 
-    <p><strong>Jokosher</strong> é uma opção simples para a edição de áudio no Linux, o Jokosher talvez seja um dos programas mais
-        indicados
-        para quem está em busca de algo que faça o simples com qualidade. Ele pode dar conta de necessidades básicas de
-        forma perfeitamente satisfatória. Isso porque conta com uma interface limpa e fácil de ser compreendida
-        inclusive
-        por quem é leigo no assunto. Além disso, ele funciona na base de ambientes de trabalho, permitindo que você
-        oculte
-        ou exiba diferentes janelas conforme a necessidade do momento. Porém, além do básico, o Jokosher também é capaz
-        oferecer recursos potentes. É possível capturar e unir várias faixas de áudio, gravar sons a partir de
-        diferentes
-        instrumentos musicais e muito mais. Filtros e efeitos complementam os recursos deste ótimo programa. </p>
+        <p><strong>Jokosher</strong> é uma opção simples para a edição de áudio no Linux, o Jokosher talvez seja um dos
+            programas mais
+            indicados
+            para quem está em busca de algo que faça o simples com qualidade. Ele pode dar conta de necessidades básicas
+            de
+            forma perfeitamente satisfatória. Isso porque conta com uma interface limpa e fácil de ser compreendida
+            inclusive
+            por quem é leigo no assunto. Além disso, ele funciona na base de ambientes de trabalho, permitindo que você
+            oculte
+            ou exiba diferentes janelas conforme a necessidade do momento. Porém, além do básico, o Jokosher também é
+            capaz
+            oferecer recursos potentes. É possível capturar e unir várias faixas de áudio, gravar sons a partir de
+            diferentes
+            instrumentos musicais e muito mais. Filtros e efeitos complementam os recursos deste ótimo programa. </p>
 
-    <img src="img/jokosher.png" alt="jokosher, editor de audio" >
-    
-</main>
-<footer>
-    <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
+        <img src="img/jokosher.png" alt="jokosher, editor de audio" class="img-thumbnail imgnew">
 
-    <h3>Confira nossas redes sociais</h3>
+        <div class="position-fixed end-0 fixed-bottom-meu">
+            <div class="toast show m-2 fade border-0"
+                style="border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 12px; margin: 10px;"
+                role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header bg-notificacao-header text-white"
+                    style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                    <strong class="me-auto">Entre em contato</strong>
+                    <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+
+                <div class="toast-body bg-notificacao-body ">
+                    <div class="justify-content-center text-center">
+                        <a class="m-2"
+                            href="https://api.whatsapp.com/send?phone=5547992486264&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!"
+                            target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+
+                        <a class="m-1" href="https://www.instagram.com/" target="_blank"><i
+                                class="bi bi-instagram icone-fb"></i></a>
+
+                        <a class="m-2" href="https://www.facebook.com/" target="_blank"><i
+                                class="bi bi-facebook icone-fb"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <button onclick="window.location.href='#1'" class="button_prox"
+            style="vertical-align:middle"><span><b>Início</b></span></button>
+
+        <h3>Confira nossas redes sociais</h3>
 
 
 
-    <div>
-        <ul>
-            <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
-            </li>
+        <div>
+            <ul>
+                <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                    <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
+                </li>
 
-            <li> <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                <img style="width: 25px;" src="img/instagram.png" alt="Icone do Instagram">
-            </li>
+                <li> <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                    <img style="width: 25px;" src="img/instagram.png" alt="Icone do Instagram">
+                </li>
 
-            <li> <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-                <img style="width: 25px;" src="img/youtube.png" alt="Icone do Youtube">
-            </li>
-        </ul>
-    </div>
- 
-    
-    <p id="2">Todos os direitos reservados</p>
+                <li> <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+                    <img style="width: 25px;" src="img/youtube.png" alt="Icone do Youtube">
+                </li>
+            </ul>
+        </div>
+
+
+        <p id="2">Todos os direitos reservados</p>
     </footer>
-
 </body>
 
 </html>

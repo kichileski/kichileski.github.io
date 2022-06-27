@@ -3,178 +3,286 @@
 <!--Inicio e Linguagem-->
 
 <head>
-    <!--todos os comentários foram usados para orientação como estudo!!.-->
-    <!-- Importante para garantir a correta codificação dos caracteres -->
-    <meta charset="UTF-8">
-    <!--Acentuação do texto-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--  Area em que o conteudo pode ser acessado, importante para dispositivos móveis-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Atualiza a pagina a cada 3 segundos -->
-    <meta http-equiv="refresh" content="20">
-    <title>Mundo Linux</title>
-    <!-- autor -->
-    <meta name="author" content="Anderson Ketz Kichileski" />
-    <!-- Para orientar os robôs de buscas (follow e nofollow) -->
-    <meta name="robots" content="index,follow" />
-    <!-- Descricao do conteudo do site -->
-    <meta name="description" content="Este site trás informações sobre linux e seus programas." />
-    <!-- Palavras-chave -->
-    <meta name="keywords"
-        content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
-    <!-- Sempre usar ícones com extensão .ico -->
-    <link rel="icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="css/styles.css">
+  <!--todos os comentários foram usados para orientação como estudo!!.-->
+  <!-- Importante para garantir a correta codificação dos caracteres -->
+  <meta charset="UTF-8">
+  <!--Acentuação do texto-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--  Area em que o conteudo pode ser acessado, importante para dispositivos móveis-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Atualiza a pagina a cada 3 segundos -->
+  <meta http-equiv="refresh" content="20">
+  <title>Mundo Linux</title>
+  <!-- autor -->
+  <meta name="author" content="Anderson Ketz Kichileski" />
+  <!-- Para orientar os robôs de buscas (follow e nofollow) -->
+  <meta name="robots" content="index,follow" />
+  <!-- Descricao do conteudo do site -->
+  <meta name="description" content="Este site trás informações sobre linux e seus programas." />
+  <!-- Palavras-chave -->
+  <meta name="keywords"
+    content="linux, programas linux, mundo linux, open source, programas linux, audio linux, video linux, imagem linux, navegador linux." />
+  <!-- Sempre usar ícones com extensão .ico -->
+  <link rel="icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- CSS only (BootsSteep) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- JavaScript Bundle with Popper (BootsSteep) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
 </head>
 
-<body id="1">
-    <header>
-        <!--cabeçalho-->
+<body id="1" style="background: rgba(255, 217, 0, 0.603);">
 
-        <nav>
-            <!--Navegação cabeçalho-->
-            <!--(a) href link ancora-->
-            
-            <a href="index.html">Home</a>
-            <a href="pglinux.html">Distribuições Linux</a>
-            <a href="pgaudio.html">Editores de audio</a>
-            <a href="pgfoto.html">Editores de foto</a>
-            <a href="pgvideo.html">Editores de video</a>
-            <a href="pgtexto.html">Editores de texto</a>
-            <a href="pgnavegadores.html">Navegadores</a>
-            <a href="pgdiversos.html">Diversos</a>
-        </nav>
+  <div class="conteiner-fluid"></div>
 
-    </header>
-    <main>
-        <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da página</b></span></button>
-        <h2>Conhecendo o Sistema Operacional Linux</h2>
+  <header>
+    <!--cabeçalho-->
+    <!--Navegação cabeçalho-->
+    <!--(a) href link ancora-->
 
-        <img src="img/linux.png" alt="varias distribuições linux" id="im"/>
-        <h2>O que é Linux?</h2>
+    <nav class="navbar navbar-expand-sm">
 
-        <p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em
-            um
-            computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.
+      <a class="index" href="index.html"><i class="bi bi-house-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li><a class="pglinux" href="pglinux.html">Distribuições Linux</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgaudio" href="pgaudio.html">Editores de audio</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgfoto" href="pgfoto.html">Editores de foto</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgvideo" href="pgvideo.html">Editores de video</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgtexto" href="pgtexto.html">Editores de texto</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgnavegadores" href="pgnavegadores.html">Editores de navegadores</a>
+          </li>
+          <li class="nav-item">
+            <a class="pgdiversos" href="pgdiversos.html">Diversos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-            Apesar desta interpretação ser simplista é perfeitamente correta e aceitável. Mas, em uma definição mais
-            profunda e técnica, Linux é o nome dado apenas ao núcleo do sistema operacional, chamado de Kernel.
+  </header>
+  <main>
+    
+      <button onclick="window.location.href='#2'" class="button_ant" style="vertical-align:middle"><span><b>Final da
+        página</b></span></button> 
+        
+        <div class="container">
+      <h2>Conhecendo o Sistema Operacional Linux</h2>
 
-            Kernel é um conjunto de instruções que controla como será usado o processador, a memória, o disco e
-            dispositivos
-            periféricos. É o software presente em todo sistema operacional que determina como o computador deve
-            funcionar. O
-            Kernel Linux foi criado pelo Linus Torvalds, com a primeira versão oficial lançada em 1991.
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-            O Kernel por si só não tem utilidade prática. É preciso uma série de programas adicionais para seu uso
-            efetivo,
-            como interpretadores de comandos, compiladores para que seja possível o desenvolvimento de novos programas,
-            editores de textos e assim por diante.
-
-            Desde 1984, um projeto chamado de GNU criado por Richard Stallman tinha como meta o desenvolvimento de um
-            sistema operacional livre baseado no Unix. O projeto então criou uma licença de software chamada de GPL. Ela
-            permitia a modificação livre do código de um programa, desde que distribuído posteriormente desta mesma
-            forma e
-            mantida os créditos dos desenvolvedores. Ao longo de cinco anos o projeto já tinha criado a maior parte dos
-            programas essenciais para um sistema operacional mas faltava um Kernel livre.
-
-            Em 1992, Linus Torvalds adere a licença GPL o que torna o Kernel Linux um software livre. A junção das
-            ferramentas do projetos GNU mas o Kernel Linux deu origem ao sistema operacional GNU/Linux.
-
-            Então Linux é o nome do Kernel e GNU/Linux do sistema operacional (Kernel + programas essenciais). Mas pela
-            simplicidade, Linux é o termo largamente aceito para definição do sistema operacional do pinguim e assim o
-            chamaremos daqui em diante.</p>
-
-        <h2>Linux está em todo lugar</h2>
-
-        <p>O desenvolvimento do sistema operacional Linux contou com a colaboração de milhares de desenvolvedores desde
-            então, e novos aplicativos foram adicionados que permitiram o uso do sistema nos mais diversos dispositivos
-            e
-            fins. Linux está em praticamente todo lugar.
-
-            O roteador da sua casa, por exemplo, muito provavelmente utiliza Linux, assim como o codificador da sua TV a
-            cabo. A internet é em grande maioria sustentada por servidores com sistemas Linux e outras soluções sob
-            licença
-            GPL. Softwares dominantes como servidor web Apache, DNS Bind, linguagens de programação PHP, Java,
-            Javascripts,
-            bancos de dados MySQL, PostgreSQL e tantos outros são outras soluções sob licença GPL, preferencialmente
-            executadas em sistemas Linux e que fazem a web ser como conhecemos hoje.
-
-            Facebook e Netflix rodam em Linux . Assim como a nuvem computacional mais popular do mundo, a Amazon AWS. O
-            sistema operacional Android é baseado em Linux e de forma tão intima que muitos o consideram Linux.
-
-            Em um mundo digital dominado por softwares livres, não se discute mais o uso do Linux. Ele está presente em
-            nossas vidas de uma forma ou de outra. Você pode até especializar-se em uma ferramenta proprietária, mas
-            certamente irá se deparar com Linux em algum momento de sua carreira.
-
-            Conhecer Linux em qualquer nível é além de uma vantagem, uma viagem impressionante ao descobrimento. E tudo
-            pode
-            começar no seu Desktop. </p>
-
-        <h2>Linux no Desktop.</h2>
-
-        <p>O sistema operacional Linux ganhou centenas de aplicativos ao longo de seu desenvolvimento e que permitiram
-            seu
-            uso não só em servidores e sistema embarcados mas como também em Desktops.
-
-            Instalar Linux no seu computador é a melhor forma de iniciar o aprendizado, que ocorrerá de forma gradual e
-            natural. Você poderá instalar o Linux em um computador que já tenha o Windows e manter os dois sistemas
-            operacionais. Poderá inclusive virtualizar o Linux dentro do Windows ou vice-versa </p>
-
-        <h2>O Linux é bom devido as infinitas possibilidades.</h2>
-
-        <p>O mundo Linux é dominado pela pluralidade. Como o código fonte dos programas podem ser livremente
-            modificados,
-            normalmente para cada solução existem mais de um aplicativo. O sistema gráfico de janelas, por exemplo, são
-            vários no Linux. Cada um apresenta usabilidade, visual e funcionalidades únicas. Entre as interfaces
-            disponíveis, UNITY, GNOME Shell e KDE são as majoritárias e com variações que levam a experiências
-            diferentes.
-            Há ainda Cinnamon, Mate, LXCE, XFCE, Pantheon Shell, OpenBox, Enlightenment, Fluxbox e outros. O mesmo vale
-            para
-            os demais aplicativos. Para cada segmento há muitas opções. E um programa pode ainda ser distribuído em um
-            formato que não seja compatível com outro.
-
-            A diversidade do Linux é sua vantagem, mas também seu maior desafio. Com tantas opções era preciso juntar
-            todas
-            as peças para entrega de uma solução acessível aos usuários. Aí que surgem as Distribuições Linux.
-
-            Uma distribuição é um projeto com objetivo de empacotar um conjunto de aplicações Linux, com padrões
-            estabelecidos e um assistente para instalação. Em uma analogia aos automóveis, seria uma montadora que une
-            diversas peças para criação de um veículo pronto para ser usado.
-
-            Cada distribuição é criada para um perfil de uso. Há àquela voltadas à simplicidade no uso em desktops,
-            outras
-            para servidores, aquelas com focam em Media centers, em computadores mais antigos ou com interfaces touch. A
-            escolha dependerá da necessidade.
-
-            Assim, para iniciar no Linux, sua primeira decisão deve ser qual distribuição usar e então desfrutar de um
-            novo
-            universo de possibilidades. Conte com uma comunidade muita receptiva a dúvidas de novos usuários e não deixe
-            também de colaborar e seguir com esta corrente motivada pela transferência e evolução do conhecimento. </p>
-
-    </main>
-    <footer>
-        <button onclick="window.location.href='#1'" class="button_prox" style="vertical-align:middle"><span><b>Início</b></span></button>
-        <h3>Confira nossas redes sociais</h3>
-
-        <div>
-            <ul>
-                <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-                    <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
-                </li>
-
-                <li> <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-                    <img style="width: 25px;" src="img/instagram.png" alt="Icone do Instagram">
-                </li>
-
-                <li> <a href="https://www.youtube.com/" target="_blank">YouTube</a>
-                    <img style="width: 25px;" src="img/youtube.png" alt="Icone doYoutube">
-                </li>
-            </ul>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
-    <p id="2">Todos os direitos reservados</p>
-    </footer>
 
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/linux.jpg" alt="Linux" class="img-thumbnail ximg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/linux2.jpg" alt="Linux" class="img-thumbnail ximg">
+          </div>
+          <div class="carousel-item">
+            <img src="img/linux3.jpg" alt="Linux" class="img-thumbnail ximg">
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+      <h2>O que é Linux?</h2>
+
+      <p>Linux é um Sistema Operacional, assim como o Windows e o Mac OS, que possibilita a execução de programas em
+        um
+        computador e outros dispositivos. Linux pode ser livremente modificado e distribuído.
+
+        Apesar desta interpretação ser simplista é perfeitamente correta e aceitável. Mas, em uma definição mais
+        profunda e técnica, Linux é o nome dado apenas ao núcleo do sistema operacional, chamado de Kernel.
+
+        Kernel é um conjunto de instruções que controla como será usado o processador, a memória, o disco e
+        dispositivos
+        periféricos. É o software presente em todo sistema operacional que determina como o computador deve
+        funcionar. O
+        Kernel Linux foi criado pelo Linus Torvalds, com a primeira versão oficial lançada em 1991.
+
+        O Kernel por si só não tem utilidade prática. É preciso uma série de programas adicionais para seu uso
+        efetivo,
+        como interpretadores de comandos, compiladores para que seja possível o desenvolvimento de novos programas,
+        editores de textos e assim por diante.
+
+        Desde 1984, um projeto chamado de GNU criado por Richard Stallman tinha como meta o desenvolvimento de um
+        sistema operacional livre baseado no Unix. O projeto então criou uma licença de software chamada de GPL. Ela
+        permitia a modificação livre do código de um programa, desde que distribuído posteriormente desta mesma
+        forma e
+        mantida os créditos dos desenvolvedores. Ao longo de cinco anos o projeto já tinha criado a maior parte dos
+        programas essenciais para um sistema operacional mas faltava um Kernel livre.
+
+        Em 1992, Linus Torvalds adere a licença GPL o que torna o Kernel Linux um software livre. A junção das
+        ferramentas do projetos GNU mas o Kernel Linux deu origem ao sistema operacional GNU/Linux.
+
+        Então Linux é o nome do Kernel e GNU/Linux do sistema operacional (Kernel + programas essenciais). Mas pela
+        simplicidade, Linux é o termo largamente aceito para definição do sistema operacional do pinguim e assim o
+        chamaremos daqui em diante.</p>
+
+      <h2>Linux está em todo lugar</h2>
+
+      <p>O desenvolvimento do sistema operacional Linux contou com a colaboração de milhares de desenvolvedores desde
+        então, e novos aplicativos foram adicionados que permitiram o uso do sistema nos mais diversos dispositivos
+        e
+        fins. Linux está em praticamente todo lugar.
+
+        O roteador da sua casa, por exemplo, muito provavelmente utiliza Linux, assim como o codificador da sua TV a
+        cabo. A internet é em grande maioria sustentada por servidores com sistemas Linux e outras soluções sob
+        licença
+        GPL. Softwares dominantes como servidor web Apache, DNS Bind, linguagens de programação PHP, Java,
+        Javascripts,
+        bancos de dados MySQL, PostgreSQL e tantos outros são outras soluções sob licença GPL, preferencialmente
+        executadas em sistemas Linux e que fazem a web ser como conhecemos hoje.
+
+        Facebook e Netflix rodam em Linux . Assim como a nuvem computacional mais popular do mundo, a Amazon AWS. O
+        sistema operacional Android é baseado em Linux e de forma tão intima que muitos o consideram Linux.
+
+        Em um mundo digital dominado por softwares livres, não se discute mais o uso do Linux. Ele está presente em
+        nossas vidas de uma forma ou de outra. Você pode até especializar-se em uma ferramenta proprietária, mas
+        certamente irá se deparar com Linux em algum momento de sua carreira.
+
+        Conhecer Linux em qualquer nível é além de uma vantagem, uma viagem impressionante ao descobrimento. E tudo
+        pode
+        começar no seu Desktop. </p>
+
+      <h2>Linux no Desktop.</h2>
+
+      <p>O sistema operacional Linux ganhou centenas de aplicativos ao longo de seu desenvolvimento e que permitiram
+        seu
+        uso não só em servidores e sistema embarcados mas como também em Desktops.
+
+        Instalar Linux no seu computador é a melhor forma de iniciar o aprendizado, que ocorrerá de forma gradual e
+        natural. Você poderá instalar o Linux em um computador que já tenha o Windows e manter os dois sistemas
+        operacionais. Poderá inclusive virtualizar o Linux dentro do Windows ou vice-versa </p>
+
+      <h2>O Linux é bom devido as infinitas possibilidades.</h2>
+
+      <p>O mundo Linux é dominado pela pluralidade. Como o código fonte dos programas podem ser livremente
+        modificados,
+        normalmente para cada solução existem mais de um aplicativo. O sistema gráfico de janelas, por exemplo, são
+        vários no Linux. Cada um apresenta usabilidade, visual e funcionalidades únicas. Entre as interfaces
+        disponíveis, UNITY, GNOME Shell e KDE são as majoritárias e com variações que levam a experiências
+        diferentes.
+        Há ainda Cinnamon, Mate, LXCE, XFCE, Pantheon Shell, OpenBox, Enlightenment, Fluxbox e outros. O mesmo vale
+        para
+        os demais aplicativos. Para cada segmento há muitas opções. E um programa pode ainda ser distribuído em um
+        formato que não seja compatível com outro.
+
+        A diversidade do Linux é sua vantagem, mas também seu maior desafio. Com tantas opções era preciso juntar
+        todas
+        as peças para entrega de uma solução acessível aos usuários. Aí que surgem as Distribuições Linux.
+
+        Uma distribuição é um projeto com objetivo de empacotar um conjunto de aplicações Linux, com padrões
+        estabelecidos e um assistente para instalação. Em uma analogia aos automóveis, seria uma montadora que une
+        diversas peças para criação de um veículo pronto para ser usado.
+
+        Cada distribuição é criada para um perfil de uso. Há àquela voltadas à simplicidade no uso em desktops,
+        outras
+        para servidores, aquelas com focam em Media centers, em computadores mais antigos ou com interfaces touch. A
+        escolha dependerá da necessidade.
+
+        Assim, para iniciar no Linux, sua primeira decisão deve ser qual distribuição usar e então desfrutar de um
+        novo
+        universo de possibilidades. Conte com uma comunidade muita receptiva a dúvidas de novos usuários e não deixe
+        também de colaborar e seguir com esta corrente motivada pela transferência e evolução do conhecimento. </p>
+
+        <h2>Tux</h2>
+        
+        
+        <div class="card mt-3 mb-3 cardcenter" style="background: rgba(255, 217, 0, 0.603); width: 18rem;">
+          <img src="img/tux.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">O Tux é a mascote oficial do kernel Linux. Criado por Larry Ewing em 1996, é um pinguim gorducho que tem um ar satisfeito e saciado. A ideia da mascote do Linux ser um pinguim veio do próprio Linus Torvalds, criador do núcleo Linux.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="position-fixed end-0 fixed-bottom-meu">
+        <div class="toast show m-2 fade border-0"
+          style="border-style: solid; border-width: 1px; border-color: rgb(0, 0, 0); border-radius: 12px; margin: 10px;"
+          role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header bg-notificacao-header text-white"
+            style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+            <strong class="me-auto">Entre em contato</strong>
+            <button type="button" class="btn-close ms-2 mb-1" data-bs-dismiss="toast" aria-label="Close">
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="toast-body bg-notificacao-body ">
+            <div class="justify-content-center text-center">
+              <a class="m-2"
+                href="https://api.whatsapp.com/send?phone=5547992486264&text=Ol%C3%A1%2C%20estou%20entrando%20em%20contato%2C%20pois%20quero%20dar%20dicas%20e%20sugest%C3%B5es%20para%20o%20seu%20site!"
+                target="_blank"><i class="bi bi-whatsapp icone-wp"></i></a>
+
+              <a class="m-1" href="https://www.instagram.com/" target="_blank"><i
+                  class="bi bi-instagram icone-fb"></i></a>
+
+              <a class="m-2" href="https://www.facebook.com/" target="_blank"><i
+                  class="bi bi-facebook icone-fb"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+  </main>
+  <footer>
+    <button onclick="window.location.href='#1'" class="button_prox"
+      style="vertical-align:middle"><span><b>Início</b></span></button>
+    <h3>Confira nossas redes sociais</h3>
+
+    <div>
+      <ul>
+        <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          <img style="width: 25px;" src="img/facebook.png" alt="Icone do Facebook">
+        </li>
+
+        <li> <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <img style="width: 25px;" src="img/instagram.png" alt="Icone do Instagram">
+        </li>
+
+        <li> <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+          <img style="width: 25px;" src="img/youtube.png" alt="Icone doYoutube">
+        </li>
+      </ul>
+    </div>
+    <p id="2">Todos os direitos reservados</p>
+  </footer>
 </body>
 
 </html>
